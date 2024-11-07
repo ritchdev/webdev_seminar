@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Welcome to RandomJobSite!</h2>
+    <h4>Please fill out the following form to start working with us.</h4>
+    
+    <section class="application">
+        <form>
+            <h3>Personal Details</h3>
+            <input type="text" id="first_name" placeholder="First Name" class="mandatory" minlength="1" maxlength="50">
+            <input type="text" id="middle_name" placeholder="Middle Name">
+            <input type="text" id="last_name" placeholder="Last Name" class="mandatory" minlength="1" maxlength="50">
+            <br>
+            <input type="number" id="age" placeholder="Age" class="mandatory" min="18">
+            <select id="gender" title="Gender" class="mandatory">
+                <option hidden disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Female">Other</option>
+            </select>
+            <input type="email" id="email" placeholder="Email" class="mandatory" minlength="5" maxlength="100">
+            <br>
+            <h3>Residential Details</h3>
+            <input type="text" id="address" placeholder="Address" class="mandatory" minlength="10" maxlength="200">
+            <input type="number" id="pincode" placeholder="PIN Code" class="mandatory">
+            <input type="text" id="country" placeholder="Country" class="mandatory" minlength="2" maxlength="100">
+            <br>
+            <h3>Professional Details</h3>
+            <textarea name="experience" class="mandatory" placeholder="Tell us about your work experience" cols="10" rows="5"></textarea> 
+            <textarea name="reason" class="mandatory" placeholder="Why do you want this job?" cols="10" rows="5"></textarea> 
+            <h3>Questions</h3>
+            <textarea name="questions" class="mandatory" placeholder="Do you have any questions for us?" id="questions" cols="5" rows="5"></textarea> 
+            <br>
+        </form>
+        <button id="submit">Submit</button>
+    </section>
+    
+</body>
+</html>
