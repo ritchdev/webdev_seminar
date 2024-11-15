@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="hero">
+        <h2>Welcome to RandomCollegeSite!</h2>
+        <img id="univ_logo" alt="University Logo" src="univ_logo.png">
+        <h4>Please fill out the following form to get enrolled in our institution.</h4>
+    </section>
+
+    <section class="application">
+        <form id="application_form">
+            <h3>Student Information</h3>
+            <input type="text" id="first_name" placeholder="First Name" class="mandatory" minlength="1" maxlength="50" required>
+            <input type="text" id="middle_name" placeholder="Middle Name">
+            <input type="text" id="last_name" placeholder="Last Name" class="mandatory" minlength="1" maxlength="50" required>
+            <br>
+            <input type="number" id="age" placeholder="Age" class="mandatory" min="18" required>
+            <select id="gender" title="Gender" class="mandatory" required>
+                <option hidden disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Female">Other</option>
+            </select>
+            <input type="date" id="dob" placeholder="Date Of Birth" class="mandatory" title="Date of Birth" required>
+            <br>
+            <h3>Residential Details</h3>
+            <input type="text" id="address" placeholder="Address" class="mandatory" minlength="10" maxlength="200" required>
+            <input type="number" id="pincode" placeholder="PIN Code" class="mandatory" required>
+            <input type="text" id="country" placeholder="Country" class="mandatory" minlength="2" maxlength="100" required>
+            <br>
+            <h3>Contact Details</h3>
+            <input type="email" id="email" placeholder="EMail" class="mandatory" minlength="10" maxlength="200" required>
+            <input type="number" id="phone" placeholder="Phone Number" class="mandatory" required>
+            <input type="number" id="telephone" placeholder="Telephone Number" >
+            <br>
+            
+        </form>
+        <button id="submit" form="application_form">Submit</button>
+        <p>*The required fields are marked in red.</p>
+    </section>
+
+</body>
+
+</html>
