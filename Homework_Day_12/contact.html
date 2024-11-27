@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        h3 {
+            text-decoration: underline;
+            text-align: left;
+            line-height: 55px;
+            width: 50%;
+            padding: 0;
+            margin: 0;
+            padding-left: 20px;
+            background-color: white;
+        }
+
+        P{
+            padding-bottom: 10px;
+            margin-bottom: 0;
+        }
+
+        footer {
+            margin-top: 0;
+            padding-top: 0;
+            background-color: rgba(0, 0, 0, 0.11);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        footer h2 {
+            margin-right: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header style="margin-bottom: 0; text-align: center; font-size: large; font-weight: 600;">
+        <h3>Assignment: Day 12</h3>
+        <section class="nav_bar" style="width: 50%;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </section>
+    </header>
+    <hr style="color: black;margin-bottom: 0;">
+    <main>
+        <article>
+            <h1 style="margin: 0; padding-top: 15px;">Heading for a generic paragraph</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero nulla illum amet ullam nobis quae sapiente
+                in corrupti molestiae ea tempore consectetur nesciunt, numquam quam voluptatum eaque maxime ratione,
+                architecto explicabo laudantium autem praesentium! Asperiores sunt est, accusantium ad fugit ipsa minus
+                quam officia. Explicabo, natus, eos, inventore animi debitis eveniet doloribus ipsa porro blanditiis
+                numquam officiis. Maxime hic beatae, distinctio possimus ipsam sed facere quasi provident quidem impedit
+                quas quisquam, perferendis eius? Quidem eaque sed, hic quod, eius dicta iste dolore vitae fuga
+                accusantium quos mollitia quae eveniet dignissimos consequuntur eos excepturi tempora dolores,
+                blanditiis tempore suscipit cumque cupiditate laudantium atque. Aliquid voluptatibus, tenetur
+                repellendus natus placeat suscipit quibusdam hic eos harum repellat saepe corrupti ducimus corporis
+                accusantium labore unde praesentium eum delectus, consequuntur facere consequatur, animi perferendis! Id
+                quo, eum itaque ab repellendus architecto neque necessitatibus quasi. Quasi fuga sit aspernatur ullam
+                voluptatibus debitis optio excepturi. Nulla, corrupti. Laboriosam adipisci quae eos eveniet sequi aut
+                nesciunt magnam, a harum aliquid perspiciatis alias ad ut. Sunt totam, enim repellendus, ullam, aut
+                suscipit nam asperiores voluptatem id in blanditiis. Iure repellat illo magnam. Distinctio quas quisquam
+                facere expedita nobis ipsum quam consectetur aliquam iure harum mollitia ipsa libero, corrupti animi
+                saepe laudantium sequi labore, fuga nihil sint, rem iusto molestiae. Laudantium enim, iste rerum fugiat
+                in tempora beatae assumenda odio tempore. Saepe magni doloremque architecto dolor accusantium odio.
+                Aspernatur molestiae enim tempora vero fugiat animi adipisci, optio, mollitia sit, doloribus libero
+                distinctio blanditiis impedit.</p>
+
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <div style="text-align: center;">
+            <hr style="margin: 0;">
+            <h1 style="margin-top: 12px;margin-bottom: 15px;">Footer</h1>
+            <hr>
+            <h2 style="display: inline-block; width: fit-content;">Today's Date: </h2>
+            <h1 id="date" style="display: inline-block; width: fit-content;"></h1>
+            <br>
+            <h2 style="display: inline-block; width: fit-content;">Made by: </h2>
+            <h1 style="display: inline-block; width: fit-content;">Ritam Chatterjee</h1>
+            <script>
+                var date = new Date().toLocaleDateString("en-UK");
+                document.getElementById("date").innerHTML = date;
+            </script>
+        </div>
+    </footer>
+</body>
+
+</html>
