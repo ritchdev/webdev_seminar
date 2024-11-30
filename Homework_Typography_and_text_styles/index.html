@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography and Text Styles</title>
+    <style>
+        h2 {
+            text-decoration: underline;
+            letter-spacing: 4px;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        footer h2 {
+            margin-right: 5px;
+            letter-spacing: 0 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2 style="text-transform: uppercase;">Typography and Text Styles</h2>
+        <h4 style="margin: 2px; font-style: italic;">An essential part of styling your web page</h4>
+    </header>
+    <hr style="color: black;margin-bottom: 0;">
+    <main>
+        <article>
+            <p><strong>Typography and text properties</strong> are essential aspects of web design, as they define how
+                content appears
+                and is read by users. In this assignment, we explored the concepts of font-family, font-size,
+                font-style, and other text-related CSS properties to enhance the presentation of a webpage. The
+                thoughtful application of these properties helps create a clear visual hierarchy and improves
+                readability, ensuring a better user experience</p>
+            <p>We experimented with properties like <strong>text-transform, text-decoration, and text-indent</strong> to
+                add stylistic
+                elements to our webpage. For instance, uppercase transformation in headings and indents in paragraphs
+                helped in creating a professional and clean layout. Additionally, using <strong>text-overflow with
+                    ellipses</strong>
+                provided a practical solution for handling overflowing content. This approach ensures a balance between
+                aesthetics and functionality.</p>
+            <p>Lastly, <em>pseudo-elements</em> such as <strong>::before</strong> and <strong>::after</strong> were
+                utilized to add decorative elements without
+                cluttering the HTML structure. These, along with proper alignment and spacing, showcase how CSS can
+                bring structure and style together in web development. This assignment not only enhanced our
+                understanding of typography but also allowed us to apply creative solutions to common design challenges.
+            </p>
+            <h4 style="color: green;">My favourite movies:</h4>
+            <ul>
+                <li style="color: red;">Spiderman: No Way Home</li>
+                <li style="color: orange;">Hatyapuri</li>
+                <li style="color: purple;">Dawshom Awbotar</li>
+                <li style="color: blue;">Bhool Bhulaiya 3</li>
+                <li style="color: black; text-decoration: line-through;">The Ghazi Attack</li>
+            </ul>
+        </article>
+
+        <div id="overflow_container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus doloribus aut voluptatum eaque
+            at quidem. Animi accusantium eaque laudantium?
+        </div>
+
+
+
+    </main>
+    <footer>
+        <div style="text-align: center;">
+            <hr style="margin: 0;">
+            <h2 style="display: inline-block; width: fit-content;">Today's Date: </h2>
+            <h1 id="date" style="display: inline-block; width: fit-content;"></h1>
+            <br>
+            <h2 style="display: inline-block; width: fit-content;">Made by: </h2>
+            <h1 style="display: inline-block; width: fit-content;">Ritam Chatterjee</h1>
+            <script>
+                var date = new Date().toLocaleDateString("en-UK");
+                document.getElementById("date").innerHTML = date;
+            </script>
+        </div>
+    </footer>
+</body>
+
+</html>
