@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="hero">
+        <h1 style="margin: 0; padding: 20px;">Please tell us about your Startup idea by filling out the following form
+        </h1>
+        <h3 style="padding-bottom: 20px;">We look forward to working with you!</h3>
+    </section>
+    <section class="form_div_container">
+        <div class="form_div">
+            <h2>Startup Application Form</h2>
+            <hr style="color: black;width: 100%;">
+            <form id="application_form">
+                <div style="text-align: center;">
+                    <h3>Personal Details</h3>
+                    <input type="text" id="first_name" placeholder="First Name" minlength="1" maxlength="50" required>
+                    <input type="text" id="middle_name" placeholder="Middle Name">
+                    <input type="text" id="last_name" placeholder="Last Name" minlength="1" maxlength="50" required>
+
+                    <br>
+                    <input type="number" id="age" placeholder="Age" min="18" required>
+                    <select id="gender" title="Gender" required>
+                        <option hidden disabled selected>Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Female">Other</option>
+                    </select>
+                    <input type="email" id="email" placeholder="Email" minlength="5" maxlength="100" required>
+                </div>
+                <br>
+                <div style="text-align: center;">
+                    <h3>Startup Details</h3>
+                    <input type="text" id="startup_name" placeholder="Startup Name" maxlength="100" required>
+                    <input type="email" id="startup_email" placeholder="Startup Email" minlength="5" maxlength="100"
+                        required>
+                    <input type="number" id="startup_employees" placeholder="No. of Employees" min="1" required>
+                    <br>
+                    <select id="startup_industry" title="Industry" required>
+                        <option hidden disabled selected>Industry</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Education">Education</option>
+                        <option value="Development">Technology</option>
+                        <option value="Finance">Healthcare</option>
+                    </select>
+                    <br>
+                    <textarea style="width: 50%; margin-top: 5px;" name="startup_description" placeholder="Give us a brief description of your startup" cols="15" rows="5"
+                        required></textarea>
+                </div>
+                <br>
+                <div style="text-align: center; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                    <h3>Business Type</h3>
+                    <input type="radio" id="B2B" name="startup_type" value="B2B">
+                    <label for="B2B">B2B</label><br>
+                    <input type="radio" id="B2C" name="startup_type" value="B2C">
+                    <label for="B2C">B2C</label><br>
+                </div>
+                <br>
+                <div id="services" style="text-align: center;">
+                    <h3>Services Required</h3>
+                    <input type="checkbox" id="marketing" required>
+                    <label for="marketing">Marketing</label>
+                    <input type="checkbox" id="development" required>
+                    <label for="development">Development</label>
+                    <input type="checkbox" id="design" required>
+                    <label for="design">Design</label>
+                    <input type="checkbox" id="hiring" required>
+                    <label for="hiring">Hiring</label>
+                </div>
+                <br>
+                <div style="text-align: center;"><button id="submit" form="application_form">Submit</button></div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
