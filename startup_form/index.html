@@ -52,11 +52,16 @@
                         <option value="Finance">Healthcare</option>
                     </select>
                     <br>
-                    <textarea style="width: 50%; margin-top: 5px;" name="startup_description" placeholder="Give us a brief description of your startup" cols="15" rows="5"
+                    Upload a logo for your startup: 
+                    <input type="file" style="text-align: center; float: center; margin: 10px 0 0 0; height: fit-content; width: fit-content;">
+                    <br>
+                    <textarea style="width: 50%; margin: 10px 0 0 0;" name="startup_description"
+                        placeholder="Give us a brief description of your startup" cols="15" rows="5"
                         required></textarea>
                 </div>
                 <br>
-                <div style="text-align: center; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <div
+                    style="text-align: center; display: flex; flex-direction: row; justify-content: center; align-items: center;">
                     <h3>Business Type</h3>
                     <input type="radio" id="B2B" name="startup_type" value="B2B">
                     <label for="B2B">B2B</label><br>
@@ -66,13 +71,13 @@
                 <br>
                 <div id="services" style="text-align: center;">
                     <h3>Services Required</h3>
-                    <input type="checkbox" id="marketing" required>
+                    <input type="checkbox" id="marketing">
                     <label for="marketing">Marketing</label>
-                    <input type="checkbox" id="development" required>
+                    <input type="checkbox" id="development">
                     <label for="development">Development</label>
-                    <input type="checkbox" id="design" required>
+                    <input type="checkbox" id="design">
                     <label for="design">Design</label>
-                    <input type="checkbox" id="hiring" required>
+                    <input type="checkbox" id="hiring">
                     <label for="hiring">Hiring</label>
                 </div>
                 <br>
