@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; flex-direction: column; gap: 20px; align-items: center; justify-content: center;">
+    <div>
+        <input type="number" id="n1">
+        <select id="op">
+            <option id="add">+</option>
+            <option id="sub">-</option>
+            <option id="prd">*</option>
+            <option id="div">/</option>
+            <option id="mod">%</option>
+        </select>
+        <input type="number" id="n2">
+    </div>
+
+    <button id="calculate" onclick="calculate()" style="width: 90px; border: 1px solid black; border-radius: 5px; background-color: rgb(0, 211, 0); height: 20px;">Calculate</button>
+
+    <h3>Check whether 10 is equal to "10"</h3>
+    <button onclick="console.log(`10` == 10);">Using "=="</button>
+    <button onclick="console.log(`10` === 10);">Using "==="</button>
+
+    <button onclick="console.log(15%4);">Click me to find the remainder obtained when 15 is divided by 4</button>
+    <button onclick="swapVariables()">Click me to swap variables</button>
+</body>
+<script src="Ex_4.js"></script>
+</html>
